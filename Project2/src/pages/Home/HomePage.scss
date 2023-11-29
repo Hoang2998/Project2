@@ -1,0 +1,329 @@
+#textblock {
+    background-color: #210002;
+    height: 100vh;
+    
+  }
+  
+  #textblock-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 3vw;
+  }
+  
+  #textblock-title {
+    color: #ffaf1b;
+    font-size: 3vw;
+    font-weight: 600;
+    font-family: "Helvetica Neue";
+  }
+  
+  #textblock-content {
+    color: #ffaf1b;
+    font-size: 1vw;
+  }
+  #textblock::before{
+    position: absolute;
+    background-color: #210002;
+    content: '';
+    width: 100vw;
+    height: 20vw;
+    top: -35%;
+  }
+ 
+  
+  #textblock-devsense {
+    text-decoration: none;
+    color: #ffaf1b;
+    font-size: 1vw;
+    font-weight: 600;
+  }
+  
+  .animation, .animation_layer {
+      height: 100vh;
+  }
+  
+  .animation {
+    display: block;
+      position: relative;
+      z-index: 10;
+  }
+  
+  .animation_layer {
+      background-position: bottom center;
+      background-size: auto 100vh;
+      background-repeat: repeat-x;
+      width: 100%;
+      position: absolute;
+  }
+  .animation_layer.parallax {
+      position: fixed;
+  }
+  
+  #artback {
+    background-image: url(../../assets/images/background.png);
+  }
+  
+  #mountain {
+    background-image: url(../../assets/images/mountains.png);
+  }
+  
+  #logoland {
+    // background-image: url(../../assets/images/logo_land.png);
+    background-image: url(../../assets/images/sharkLogo.png);
+    background-position: 50% 15%;
+    background-size: 20vw 15vw;
+    background-repeat: no-repeat ;
+  }
+  
+  #jungle1 {
+    background-image: url(../../assets/images/jungle1.png);
+  }
+  
+  #jungle2 {
+    background-image: url(../../assets/images/jungle2.png);
+  }
+  
+  #jungle3 {
+    background-image: url(../../assets/images/jungle3.png);
+  }
+  
+  #jungle4 {
+    background-image: url(../../assets/images/jungle4.png);
+  }
+  
+  #jungle5 {
+    background-image: url(../../assets/images/jungle5.png);
+  }
+  
+  #manonmountain {
+    background-image: url(../../assets/images/man_on_mountain.png);
+  }
+  #bg21{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+      to top,
+      #080339 0%,
+      transparent 20%,
+      
+    );
+    background-image: url(../../assets/images/2107.w026.n002.585B.p1.585.jpg);
+    background-repeat: no-repeat ;
+    background-position: 50% 0%;
+    background-size: 100% 100vh;
+  }
+
+  #bg21::after{
+    position: absolute;
+    content:  '';
+    width: 100vw;
+    height: 25vw;
+    background: linear-gradient( 
+      to top, 
+      #0b0820,
+      black, 
+      #210002
+      );
+      left: 0;
+      bottom: 95%;
+
+  }
+
+  // #bg7{
+  //   background-image: url(../../assets/images/Layer7.png);
+  //   background-repeat: no-repeat ;
+  //   background-position: 75% 18%;
+  //   background-size: 71% 37%;
+  // }
+  // #bg6{
+  //   background-image: url(../../assets/images/Layer6.png);
+  //   background-repeat: no-repeat ;
+  //   background-position: 83% 31.5%;
+  //   background-size: 72% 37%;
+  // }
+  // #bg5{
+  //   background-image: url(../../assets/images/Layer5.png);
+  //   background-repeat: no-repeat ;
+  //   background-size: 21.5% 60%;
+  //   background-position: 16% 2%;
+  // }
+  // #bg4{
+  //   background-image: url(../../assets/images/Layer4.png);
+  //   background-repeat: no-repeat ;
+  //   background-size: 87% 33%;
+  //   background-position: 0% 55%;
+  // }
+  // #bg3{
+  //   background-image: url(../../assets/images/Layer3.png);
+  //   background-repeat: no-repeat ;
+  //   background-size: 66.5% 17.5%;
+  //   background-position: 0% 63.5%;
+  // }
+  // #bg1{
+  //   background-image: url(../../assets/images/Layer1.png);
+  //   background-repeat: no-repeat ;
+  //   background-size: 100% 69%;
+  //   background-position: 0% 6%;
+  // }
+
+  #fire{
+    position: absolute;
+    background-image: url(../../assets/images/fire.png);
+    // z-index: 50;
+    width: 80px;
+    height: 80px;
+    background-size: 400px  ;
+    bottom: 80px;
+    left: 50%;
+    animation: animatea 1s steps(5) infinite;
+  }
+  #fire2{
+    position: absolute;
+    background-image: url(../../assets/images/fire2.png);
+    // z-index: 50;
+    width: 90.6px;
+    height: 200px;
+    background-size: 634px  ;
+    left: 80px;
+    top: 80px;
+    z-index: 100;
+    animation: fire2 1s steps(7) infinite;
+  }
+  @keyframes fire2 {
+    from{
+        background-position: 0 ;
+    }
+    to{
+        background-position: 634px ;
+    }
+  }
+  @keyframes animatea {
+    from{
+        background-position: 0 ;
+    }
+    to{
+        background-position: 400px ;
+    }
+  }
+  #birdfly{
+    position: absolute;
+    animation: animat 10s linear infinite;
+    z-index: 100;
+    bottom: 70%;
+  }
+  #birdfly1{
+    position: absolute;
+    animation: animat 11s linear infinite;
+    z-index: 100;
+    bottom: 55%;
+    left: 10px;
+  }
+  
+  #bird{
+    position: absolute;
+    background-image: url(../../assets/images/birdfly-removebg-preview.png);
+    
+    width: 80px;
+    height: 80px;
+    background-size: 640px  ;
+    bottom: 80px;
+    left: 90px;
+    animation: animate 1s steps(8) infinite;
+    // animation: animat 10s linear infinite;
+    z-index: 100;
+  }
+  #cumeo{
+    position: absolute;
+    background-image: url(../../assets/images/cumeo.png);
+    
+    width: 100px;
+    height: 200px;
+    background-size: 400px  ;
+    bottom: 80px;
+    right: 90px;
+    // animation: animate 1s steps(8) infinite;
+    animation: animatee 3s steps(4)  infinite;
+    z-index: 100;
+  }
+  @keyframes animatee{
+    0%{
+        background-position: 0px ;    
+    }
+    20%{
+        background-position: 400px ;
+    }
+    100%{       
+       background-position: 400px ;    
+    }
+  }
+  
+  
+  @keyframes animate{
+    from{
+        background-position: 0px ;    
+    }
+    to{
+        background-position: 640px ;
+     
+    }
+  }
+  @keyframes animat{
+    from{
+        left: -20px;
+    }
+    to{
+        left: 100vw;
+
+    }
+  }
+  .HomeFooter{
+    // position: absolute;
+    width: 100%;
+    // height: 500px !important;
+    // height: 100vh !important;
+    background-color: black;
+    bottom: 0%;
+  }
+  .HomeFooter::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 20vw;
+    background: linear-gradient(
+      to top,
+      black,
+      #0b0820,
+      #0b0820,
+    );
+    left: 0;
+    top: -35%;
+  }
+  #btn{
+    position: absolute;
+    width:200px;
+    height: 100px;
+    right: 80px;
+    bottom: 30px;
+    background-color:transparent;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+ 
+  
+  .btn__btn{
+    position: absolute;
+    color: #ff721b;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    z-index: 10;
+  }
+  .btn__btn:hover{
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 5px rgb(227, 227, 201);
+  }
+   // margin-top: 100px;
+  

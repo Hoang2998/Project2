@@ -1,0 +1,22 @@
+.scrollbar {
+    overflow: scroll;
+  }
+  
+ 
+  /* custom colors  */
+  ::-webkit-scrollbar {
+    width: 6px;
+    background: black;
+    backdrop-filter: bluz(10px);
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ffc677),
+      to(#fc8600)
+      )
+  }

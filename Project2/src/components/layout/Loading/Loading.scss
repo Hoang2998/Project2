@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&display=swap');
+
+
+.Loadingbanner{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+.myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+.Loadingcontent{
+    text-align: center;
+    color: red;
+    text-shadow: 0 10px 50px #630707;
+}
+.Loadingh2{
+    font-family: 'Lacquer', cursive;
+    margin: 0;
+    font-size: 100px !important;
+    animation: animationBlur 2s linear infinite;
+}
+@keyframes animationBlur{
+    0%{
+        filter: blur(0);
+    }80%{
+        filter: blur(0);
+    }
+    90%{
+        filter: blur(5px);
+    }100%{
+        filter: blur(0);
+    }
+}
+.des{
+    rotate: -5deg;
+    text-align: left;
+    font-family: 'Lacquer', cursive;
+    
+}
+.dots{
+    /* margin-left: 8rem; */
+    position: absolute;
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    right: 23%;
+    top: 45%;
+}
+.dot{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: transparent ;
+    border-radius: 50%;
+    box-shadow:  0 10px 50px #630707;
+}
+.dot1{
+    animation: flast1 3s linear  infinite  ;
+}
+.dot2{
+    animation: flast2 3s linear infinite  ;
+}
+.dot3{
+    animation: flast3 3s linear infinite ;
+}
+@keyframes flast1 {
+    0%{
+        background-color: transparent;
+
+    }
+    30%{
+        background-color: red;
+        box-shadow:  0 10px 50px #630707;
+
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+@keyframes flast2 {
+    0%{
+        background-color: transparent;
+    }
+    30%{
+        background-color:transparent;
+    }
+    70%{
+        background-color:red;
+    }
+    100%{
+        background-color: transparent;
+    }
+}
+@keyframes flast3 {
+    0%{
+        background-color: transparent;
+    }
+    70%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: red;
+    }
+}

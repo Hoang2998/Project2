@@ -1,0 +1,130 @@
+.Category{
+    position: relative;
+    background-image: url("https://pxwall.com/wp-content/uploads/2021/06/1920x1080-4k-Wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%  ;
+    // width: 100vw;
+    height: 100vh;
+
+    .Category__name{
+        position: absolute;
+        padding-top: 4vw;
+        padding-left: 20vw;
+        color: brown;
+    }
+    // overflow-x: hidden;
+    .Alert__category{
+        position: fixed;
+        width: 300px;
+        height: 0px ;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(15px);
+        z-index: 100;
+        color: aqua;
+        box-shadow: 2px 2px 20px aqua;
+        left:40%;
+        bottom: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .Store__detail h1{
+        width: 50%;
+    }
+    .render__category{
+        // position: absolute ;
+        padding-top: 16vh;
+        padding-left: 20vw;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        overflow: hidden;
+        // z-index: 100;
+    }
+    .lista{
+        position: fixed;
+        top: 0;
+        left: 10vw;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        backdrop-filter: blur(15px);
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 1s;
+        overflow:hidden;
+        z-index: 10;
+    }
+    .lista .itema img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+    .lista .itema:hover img{
+        transform: scale(1.2);
+    }
+    .lista .itema{
+        width: 12vw;
+        height: 16vw;
+        // background-color: antiquewhite;
+        color: #c7c3c3;
+        font-family: Poppins;
+        position: relative;
+        transition: 0.5s;
+    }
+    .lista .itema .contenta{
+        position: absolute;
+        bottom: 0;
+        color: #ca1515;
+        padding: 20px;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .lista .itema:hover .contenta{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .lista:hover .itema:not(:hover){
+        filter: blur(8px);
+    }
+    
+}
+.category__detail{
+    margin-left: 20vw;
+    position: fixed;
+    width: 80vw;
+    height: 0vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    // margin-left: 20vw;
+    top: 0;
+    transition: 1s;
+    overflow: hidden;
+    color: #f5f5f5;
+    // padding: 3rem ;
+    .button__detail{
+        border: 1px solid red;
+        padding: 0.8rem 1.5rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: rgba(255, 0, 0, 0.67);
+        transition: .5s;
+    }
+    .button__detail:hover{
+        background-color: red;
+        color: #f5f5f5;
+        box-shadow: 2px 2px 20px red;
+    }
+    
+}
